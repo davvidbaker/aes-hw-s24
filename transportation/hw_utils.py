@@ -13,3 +13,14 @@ def nice_grid(plot_or_ax):
         plot_or_ax.grid(True, which="major", color="#DDD")
         plot_or_ax.grid(True, which="minor", color="#EEE", linewidth=0.5)
         plot_or_ax.minorticks_on()
+
+
+COLORS = {
+    "orange": "xkcd:macaroni and cheese",
+    "blue": "xkcd:windows blue",
+    "grey": "xkcd:cement",
+}
+
+
+def palette(str):
+    return COLORS.get(str, "xkcd:cloudy blue")
